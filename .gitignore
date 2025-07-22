@@ -18,23 +18,25 @@
 /xmlrpc.php
 
 # Configuration
-wp-config.php
+*/wp_config.php
 
 # Example themes
-/wp-content/themes/twenty*/
+*/wp-content/themes/twenty*/
 
 # Example plugin
-/wp-content/plugins/hello.php
+*/wp-content/plugins/hello.php
 
 # Uploads
-/wp-content/uploads/
+backup/aurora.budkee.me/wp-content/uploads/
 
 # Log files
 *.log
 
 # htaccess
+backup/aurora.budkee.me/.htaccess
+*/wp-content/.htaccess
+*/.htaccess
 /.htaccess
-
 # All plugins
 #
 # Note: If you wish to whitelist plugins,
@@ -73,4 +75,3 @@ data/db/*.pem
 Thumbs.db
 
 # Outros
-backup/
