@@ -27,13 +27,12 @@
 */wp-content/plugins/hello.php
 
 # Uploads
-backup/aurora.budkee.me/wp-content/uploads/
+/uploads/
 
 # Log files
 *.log
 
 # htaccess
-backup/aurora.budkee.me/.htaccess
 */wp-content/.htaccess
 */.htaccess
 /.htaccess
@@ -50,11 +49,10 @@ backup/aurora.budkee.me/.htaccess
 #/wp-content/themes
 
 # Ignorar dumps do banco de dados
-backup/*.sql
+*.sql
 
 # Ignorar arquivos de configuração sensíveis do WordPress
-backup/aurora.budkee.me/wp-config.php
-data/wordpress/wp-config.php
+wp-config.php
 
 # Ignorar todo o diretório do banco de dados MySQL
 data/db/
@@ -75,3 +73,5 @@ data/db/*.pem
 Thumbs.db
 
 # Outros
+backup/
+.env
