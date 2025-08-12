@@ -1,0 +1,65 @@
+# ======= WordPress Core - Ignore core files/folders =======
+/wp-admin/
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Index files to avoid empty folder issues (you pode manter ou remover conforme necessidade)
+#/wp-content/index.php
+#/wp-content/languages
+#/wp-content/plugins/index.php
+#/wp-content/themes/index.php
+
+# ======= WordPress Configuration =======
+wp-config.php
+data/wordpress/wp-config.php
+
+# ======= Example themes and plugins =======
+/wp-content/themes/twenty*/
+/wp-content/plugins/hello.php
+
+# ======= Uploads (media files) =======
+/wp-content/uploads/
+data/wordpress/wp-content/uploads/
+
+# ======= All Plugins and Themes (optional) =======
+# Se quiser versionar plugins/themes, descomente as linhas abaixo
+#/wp-content/plugins
+#/wp-content/themes
+
+# ======= Logs =======
+*.log
+
+# ======= Apache/nginx configs =======
+/.htaccess
+
+# ======= Banco de dados e arquivos MySQL =======
+data/db/
+*.ibd
+ibdata1
+ibtmp1
+binlog.*
+binlog.index
+auto.cnf
+undo_*
+
+# ======= Certificados e chaves privadas =======
+data/db/*.pem
+private_key.pem
+public_key.pem
+server-key.pem
+server-cert.pem
+client-key.pem
+client-cert.pem
+ca-key.pem
+ca.pem
+
+# ======= Cache, temporários e arquivos auxiliares =======
+tmp/
+.cache/
+
+# ======= Env ======
+.env
