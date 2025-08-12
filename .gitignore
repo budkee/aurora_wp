@@ -1,5 +1,20 @@
+<<<<<<< HEAD
 # ======= WordPress Core - Ignore core files/folders =======
 /wp-admin/
+=======
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+>>>>>>> 63bbd7e7e2b0de31c64d46b33ddb1e834fa73a83
 /wp-includes/
 /index.php
 /license.txt
@@ -7,6 +22,7 @@
 /wp-*.php
 /xmlrpc.php
 
+<<<<<<< HEAD
 # Index files to avoid empty folder issues (you pode manter ou remover conforme necessidade)
 #/wp-content/index.php
 #/wp-content/languages
@@ -62,4 +78,63 @@ tmp/
 .cache/
 
 # ======= Env ======
+=======
+# Configuration
+*/wp_config.php
+
+# Example themes
+*/wp-content/themes/twenty*/
+
+# Example plugin
+*/wp-content/plugins/hello.php
+
+# Uploads
+/uploads/
+
+# Log files
+*.log
+
+# htaccess
+*/wp-content/.htaccess
+*/.htaccess
+/.htaccess
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
+
+# Ignorar dumps do banco de dados
+*.sql
+
+# Ignorar arquivos de configuração sensíveis do WordPress
+wp-config.php
+
+# Ignorar todo o diretório do banco de dados MySQL
+data/db/
+
+# Ignorar certificados e chaves privadas
+data/db/*.pem
+
+# Ignorar arquivos de log
+**/error_log
+
+# Ignorar arquivos temporários e de sistema
+*.tmp
+*.swp
+*.bak
+
+# Ignorar arquivos do sistema operacional (Mac, Windows)
+.DS_Store
+Thumbs.db
+
+# Outros
+backup/
+>>>>>>> 63bbd7e7e2b0de31c64d46b33ddb1e834fa73a83
 .env

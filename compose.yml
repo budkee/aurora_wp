@@ -11,9 +11,14 @@ services:
         - ".env"
     volumes:
       - ./data/wordpress:/var/www/html
+<<<<<<< HEAD
     restart: always
     depends_on:
       - db
+=======
+    user: "${UID}:${GID}"
+    restart: always
+>>>>>>> 63bbd7e7e2b0de31c64d46b33ddb1e834fa73a83
 
 
   db:
@@ -24,3 +29,10 @@ services:
         - ".env"
     volumes:
       - ./data/db:/var/lib/mysql
+<<<<<<< HEAD
+=======
+
+# volumes:
+#   wordpress:
+#   db:
+>>>>>>> 63bbd7e7e2b0de31c64d46b33ddb1e834fa73a83

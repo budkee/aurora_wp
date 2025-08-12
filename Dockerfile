@@ -13,9 +13,12 @@ RUN adduser --disabled-password --gecos '' sirius && \
     adduser sirius www-data && \
     echo "sirius ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
+<<<<<<< HEAD
 # Setando o Server
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
+=======
+>>>>>>> 63bbd7e7e2b0de31c64d46b33ddb1e834fa73a83
 # Define usuário padrão
 USER sirius
 
