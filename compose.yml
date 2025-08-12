@@ -11,8 +11,9 @@ services:
         - ".env"
     volumes:
       - ./data/wordpress:/var/www/html
-    user: "${UID}:${GID}"
     restart: always
+    depends_on:
+      - db
 
 
   db:
@@ -23,7 +24,3 @@ services:
         - ".env"
     volumes:
       - ./data/db:/var/lib/mysql
-
-# volumes:
-#   wordpress:
-#   db:

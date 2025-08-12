@@ -5,26 +5,26 @@
 #
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+data/wordpress/wp-admin/
+data/wordpress/wp-content/index.php
+data/wordpress/wp-content/languages
+data/wordpress/wp-content/plugins/index.php
+data/wordpress/wp-content/themes/index.php
+data/wordpress/wp-includes/
+data/wordpress/index.php
+data/wordpress/license.txt
+data/wordpress/readme.html
+data/wordpress/wp-*.php
+data/wordpress/xmlrpc.php
 
 # Configuration
-*/wp_config.php
+data/wordpress/wp_config.php
 
 # Example themes
-*/wp-content/themes/twenty*/
+data/wordpress/wp-content/themes/twenty*/
 
 # Example plugin
-*/wp-content/plugins/hello.php
+data/wordpress/wp-content/plugins/
 
 # Uploads
 /uploads/
@@ -33,9 +33,8 @@
 *.log
 
 # htaccess
-*/wp-content/.htaccess
-*/.htaccess
-/.htaccess
+data/wordpress/wp-content/.htaccess
+data/wordpress/.htaccess
 # All plugins
 #
 # Note: If you wish to whitelist plugins,
@@ -50,9 +49,6 @@
 
 # Ignorar dumps do banco de dados
 *.sql
-
-# Ignorar arquivos de configuração sensíveis do WordPress
-wp-config.php
 
 # Ignorar todo o diretório do banco de dados MySQL
 data/db/

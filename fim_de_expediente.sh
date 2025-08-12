@@ -6,7 +6,7 @@
 echo "\n # -------------- Git add -------------- #"
 git add .
 echo "\n # -------------- Git commit -------------- #"
-git commit -m "Sprint 1 - Correções do Repo | 25/07/25"
+git commit -m "Sprint 1 - Reset | 12/08/25"
 echo "\n # -------------- Git Push -------------- #"
 git push
 echo "\n # -------------- Git Status -------------- #"
