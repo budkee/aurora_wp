@@ -1,6 +1,7 @@
 # WordPress core - ignore tudo do core do WP para evitar versionar arquivos padrão
 data/wordpress/wp-admin/
 data/wordpress/wp-includes/
+data/wordpress/wp-content/
 data/wordpress/wp-*.php
 data/wordpress/index.php
 data/wordpress/license.txt
