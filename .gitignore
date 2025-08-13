@@ -1,73 +1,79 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
-
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
+# WordPress core - ignore tudo do core do WP para evitar versionar arquivos padrão
 data/wordpress/wp-admin/
-data/wordpress/wp-content/index.php
-data/wordpress/wp-content/languages
-data/wordpress/wp-content/plugins/index.php
-data/wordpress/wp-content/themes/index.php
 data/wordpress/wp-includes/
+data/wordpress/wp-*.php
 data/wordpress/index.php
 data/wordpress/license.txt
 data/wordpress/readme.html
-data/wordpress/wp-*.php
 data/wordpress/xmlrpc.php
 
-# Configuration
-data/wordpress/wp_config.php
+# Evitar versionar arquivos index vazios para evitar pastas vazias (opcional)
+# data/wordpress/wp-content/index.php
+# data/wordpress/wp-content/languages/
+# data/wordpress/wp-content/plugins/index.php
+# data/wordpress/wp-content/themes/index.php
 
-# Example themes
+# Configuração sensível
+data/wordpress/wp-config.php
+
+# Exemplo de temas e plugins (pode descomentar se quiser ignorar)
 data/wordpress/wp-content/themes/twenty*/
+data/wordpress/wp-content/plugins/hello.php
 
-# Example plugin
-data/wordpress/wp-content/plugins/
+# Uploads (mídias)
+data/wordpress/wp-content/uploads/
 
-# Uploads
-/uploads/
-
-# Log files
+# Arquivos de log
 *.log
-
-# htaccess
-data/wordpress/wp-content/.htaccess
-data/wordpress/.htaccess
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
-
-# Ignorar dumps do banco de dados
-*.sql
-
-# Ignorar todo o diretório do banco de dados MySQL
-data/db/
-
-# Ignorar certificados e chaves privadas
-data/db/*.pem
-
-# Ignorar arquivos de log
 **/error_log
 
-# Ignorar arquivos temporários e de sistema
+# Arquivos temporários e de sistema
 *.tmp
 *.swp
 *.bak
 
-# Ignorar arquivos do sistema operacional (Mac, Windows)
+# Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
 
-# Outros
-backup/
+# Configurações do servidor web
+data/wordpress/.htaccess
+data/wordpress/wp-content/.htaccess
+
+# Banco de dados e arquivos MySQL
+data/db/
+*.ibd
+ibdata1
+ibtmp1
+binlog.*
+binlog.index
+auto.cnf
+undo_*
+
+# Certificados e chaves privadas
+data/db/*.pem
+private_key.pem
+public_key.pem
+server-key.pem
+server-cert.pem
+client-key.pem
+client-cert.pem
+ca-key.pem
+ca.pem
+
+# Cache e arquivos temporários
+tmp/
+.cache/
+
+# Arquivos de configuração de ambiente
 .env
+
+# Backup
+backup/
+
+# Comentários para incluir plugins e temas no versionamento (descomentar se quiser)
+# data/wordpress/wp-content/plugins/
+# data/wordpress/wp-content/themes/
+
+# Ignorar dumps de banco de dados
+*.sql
